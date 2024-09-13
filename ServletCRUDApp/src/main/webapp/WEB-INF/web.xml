@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ServletCRUDApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>It reads student details</description>
+    <display-name>ReadServletController</display-name>
+    <servlet-name>ReadServletController</servlet-name>
+    <servlet-class>com.crud.controller.ReadServletController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadServletController</servlet-name>
+    <url-pattern>/ReadServletController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CreateServletController</display-name>
+    <servlet-name>CreateServletController</servlet-name>
+    <servlet-class>com.crud.controller.CreateServletController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateServletController</servlet-name>
+    <url-pattern>/CreateServletController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is used for delete data</description>
+    <display-name>DeleteServletController</display-name>
+    <servlet-name>DeleteServletController</servlet-name>
+    <servlet-class>com.crud.controller.DeleteServletController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteServletController</servlet-name>
+    <url-pattern>/DeleteServletController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>It is used to update data</description>
+    <display-name>UpdateServletController</display-name>
+    <servlet-name>UpdateServletController</servlet-name>
+    <servlet-class>com.crud.controller.UpdateServletController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateServletController</servlet-name>
+    <url-pattern>/UpdateServletController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateServlet</display-name>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>com.crud.controller.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/UpdateServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
